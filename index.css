@@ -1,0 +1,59 @@
+.registration-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem auto 0;
+    max-width: 1280px;
+    padding: 0 1rem;
+}
+
+.registration-panel {
+    flex: 1;
+    min-width: 0;
+}
+
+.registration-table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.registration-table {
+    min-width: 600px;
+    width: 100%;
+}
+
+.field-message {
+    color: #b91c1c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    min-height: 1.25rem;
+}
+
+.bio-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+#bio-counter {
+    color: #4b5563;
+}
+
+#bio-counter.limit-reached,
+#bio-warning {
+    color: #b45309;
+}
+
+.submit-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+    .registration-layout {
+        flex-direction: row;
+    }
+}
